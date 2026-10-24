@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EEF2EE"/>
+      <stop offset="1" stop-color="#C8D1CB"/>
+    </linearGradient>
+    <linearGradient id="ribbon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF2E12"/>
+      <stop offset="1" stop-color="#FF7A1A"/>
+    </linearGradient>
+    <linearGradient id="fold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E0250C"/>
+      <stop offset="1" stop-color="#FF5A14"/>
+    </linearGradient>
+    <linearGradient id="reflect" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FF6A1A" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#FF6A1A" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="62" height="62" rx="15" fill="url(#tile)" stroke="#B9C3BC" stroke-width="1"/>
+  <rect x="2" y="2" width="60" height="34" rx="14" fill="url(#gloss)"/>
+  <!-- top bar + rounded left fold -->
+  <path d="M51 12H24C15 12 12.5 23 20 27L23 28.5" fill="none" stroke="url(#ribbon)" stroke-width="9" stroke-linejoin="round"/>
+  <!-- diagonal, slightly darker so it reads as the ribbon turning -->
+  <path d="M21 27.5L41 37.5" fill="none" stroke="url(#fold)" stroke-width="9"/>
+  <!-- bottom bar + rounded right fold -->
+  <path d="M39.5 36.7C48 41 46.5 49.5 39 49.5H13" fill="none" stroke="url(#ribbon)" stroke-width="9" stroke-linejoin="round"/>
+  <!-- soft reflection under the bottom bar -->
+  <rect x="13" y="54" width="27" height="6" fill="url(#reflect)"/>
+</svg>
